@@ -1,0 +1,17 @@
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 90px;
+  color: whitesmoke;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
