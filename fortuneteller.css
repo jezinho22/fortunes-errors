@@ -1,17 +1,56 @@
-/* Container holding the image and the text */
+/* CSS HEX */
+palette {
+  --persian-plum: #6f1d1bff;
+  --camel: #bb9457ff;
+  --bistre: #432818ff;
+  --windsor-tan: #99582aff;
+  --banana-mania: #ffe6a7ff;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #99582aff;
+  color: #ffe6a7ff;
+  width: 100%;
+} /* Container holding the image and the text */
+
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: #ffe6a7ff;
 }
 
 /* Centered text */
 .centered {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 90px;
-  color: whitesmoke;
+  color: #ffe6a7ff;
+  background-color: #6f1d1bff;
+  padding: 0px 30px 5px 30px;
+  margin-top: 30px;
+  border-radius: 5px;
   position: absolute;
   top: 8px;
   left: 50%;
   transform: translate(-50%, -0%);
+}
+.banner-img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+form {
+  background-color: #432818ff;
+}
+form div {
+  margin: 20px;
+}
+.inputBox {
+  background-color: #ffe6a7ff;
+  color: #432818ff;
+}
+#fortuneView {
+  background-color: #ffe6a7ff;
+  color: #432818ff;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
