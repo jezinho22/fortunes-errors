@@ -1,4 +1,4 @@
-function fortune(form) {
+function fortune() {
   fortunesArray = [
     "Your adventure could lead to happiness",
     "You always bring others happiness",
@@ -17,6 +17,9 @@ function fortune(form) {
     "You are offered the dream of a lifetime. Say yes!",
     "You are open-minded and quick to make new friends",
     "You are solid and dependable",
+    "You are going to have an OK day",
+    "You don't need a prediction from a cookie. You know you will be fine.",
+    "Drive for success, and you will achieve it",
     "You are soon going to change your present line of work",
     "You are talented in many ways",
     "You are the master of every situation",
@@ -91,6 +94,8 @@ function fortune(form) {
     "Your hard work will payoff today",
     "Your heart will always make itself known through your words",
     "Your home is the center of great love",
+    "Don't take your loved ones for granted",
+    "Fart right now. I dare you",
     "Your ideals are well within your reach",
     "Your infinite capacity for patience will be rewarded sooner or later",
     "Your leadership qualities will be tested and proven",
@@ -109,17 +114,12 @@ function fortune(form) {
     "Your talents will be recognized and suitably rewarded",
     "Your work interests can capture the highest status or prestige",
   ];
+  let form = document.getElementById("form1");
+
   today = new Date().getDate();
-  fortuneIndex =
+  let fortuneIndex =
     (form.inpName.value.length * form.inpAge.value * today) %
     fortunesArray.length;
   form.fortuneView.value =
     form.inpName.value + ": " + fortunesArray[fortuneIndex];
-  //return fName + ": " + fortunesArray[fortuneIndex]
-}
-function sheiss(form) {
-  form.button1.value = "Scheisse";
-}
-function checker() {
-  document.write("Java is working");
 }

@@ -15,37 +15,39 @@
       <div class="container">
         <img
           class="banner-img"
-          src="how_to_make_homemade_custom_fortune_cookies_13330_orig.jpg"
-        />
+          src="how_to_make_homemade_custom_fortune_cookies_13330_orig.jpg" />
       </div>
       <div class="centered">Fortune Cookie</div>
     </header>
     <main>
-      <div onload="javascript:checker(this.form)"></div>
-
-      <form name="myform" action="" method="">
+      <form id="form1">
         <div>
           <br />Enter your name:
-          <input type="text" name="inpName" value="Name" class="inputBox" />
+          <input
+            type="text"
+            name="inpName"
+            placeholder="Name"
+            class="inputBox" />
           <br />
           <br />
-          Enter your age as a number: <input type="text" name="inpAge"
-          value="Age" class="inputBox/>
+          Enter your age as a number:
+          <input type="text" name="inpAge" placeholder="Age" class="inputBox" />
+          <br />
           <br />
           <input
             type="button"
             name="button1"
             value="Submit"
-            onclick="fortune(this.form)"
-          />
+            id="submit"
+            onclick="fortune();" />
+
           <br />
           <br />
           <textarea
             id="fortuneView"
             name="fortuneView"
             rows="3"
-            cols="50"
-          ></textarea>
+            cols="50"></textarea>
         </div>
       </form>
     </main>

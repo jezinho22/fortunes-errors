@@ -43,14 +43,31 @@ form {
 }
 form div {
   margin: 20px;
+  min-height: 320px;
 }
 .inputBox {
   background-color: #ffe6a7ff;
   color: #432818ff;
+  min-height: 25px;
+  border-radius: 5px;
+  border: none;
 }
 #fortuneView {
   background-color: #ffe6a7ff;
   color: #432818ff;
   font-size: 24px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 16px;
+  padding-bottom: 30px;
+}
+#submit {
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #bb9457ff;
+}
+#submit:hover {
+  background-color: #432818ff;
+  color: #ffe6a7ff;
+  cursor: pointer;
 }
