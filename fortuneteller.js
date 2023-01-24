@@ -118,8 +118,20 @@ function fortune() {
 
   today = new Date().getDate();
   let fortuneIndex =
-    (form.inpName.value.length * form.inpAge.value * today) %
+    (ascii(form.inpName.value) * form.inpAge.value * today) %
     fortunesArray.length;
   form.fortuneView.value =
     form.inpName.value + ": " + fortunesArray[fortuneIndex];
+}
+//func to convert name in total of its ascii codes
+function ascii(name) {
+  //could be more elegant by using dot notation and =>
+  let n = name.split("");
+  let nChar = n.map(function (letter) {
+    return letter.charCodeAt(0);
+  });
+  let nSum = nChar.reduce(function (current, previous) {
+    return previous + current;
+  });
+  return nSum;
 }
