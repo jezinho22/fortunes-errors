@@ -1,56 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="fortuneteller.css" />
-    <script src="fortuneteller.js"></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./fortuneteller.css" />
+		<script src="./fortunes.js"></script>
+		<script src="./fortuneteller.js" defer></script>
+	</head>
 
-  <body>
-    <palette></palette>
-    <header>
-      <div class="container">
-        <img
-          class="banner-img"
-          src="how_to_make_homemade_custom_fortune_cookies_13330_orig.jpg" />
-      </div>
-      <div class="centered">Fortune Cookie</div>
-    </header>
-    <main>
-      <form id="form1">
-        <div>
-          <br />Enter your name:
-          <input
-            type="text"
-            name="inpName"
-            placeholder="Name"
-            class="inputBox" />
-          <br />
-          <br />
-          Enter your age as a number:
-          <input type="text" name="inpAge" placeholder="Age" class="inputBox" />
-          <br />
-          <br />
-          <input
-            type="button"
-            name="button1"
-            value="Submit"
-            id="submit"
-            onclick="fortune();" />
-
-          <br />
-          <br />
-          <textarea
-            id="fortuneView"
-            name="fortuneView"
-            rows="3"
-            cols="50"></textarea>
-        </div>
-      </form>
-    </main>
-    <footer>&copy; Jez Johns</footer>
-  </body>
+	<body>
+		<header>
+			<div class="container">
+				<img
+					class="banner-img"
+					src="how_to_make_homemade_custom_fortune_cookies_13330_orig.jpg"
+					alt="fortune cookie background" />
+			</div>
+			<div class="centered">Fortune Cookie</div>
+		</header>
+		<main>
+			<form id="form1">
+				<label for="nameInput">Enter your age as a number:</label>
+				<input
+					type="text"
+					name="nameInput"
+					id="nameInput"
+					placeholder="Enter your name"
+					class="inputBox" />
+				<label for="ageInput">Enter your age as a number:</label>
+				<input
+					type="text"
+					name="ageInput"
+					id="ageInput"
+					placeholder="Age"
+					class="inputBox" />
+				<button type="submit" id="submit" form="form1">
+					Open your cookie!
+				</button>
+			</form>
+			<div id="fortune-space"></div>
+		</main>
+		<footer>&copy; Jezinho</footer>
+	</body>
 </html>
