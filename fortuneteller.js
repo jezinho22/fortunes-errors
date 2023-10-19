@@ -37,3 +37,4 @@ function asciiTotal(name) {
 
 	return asciiTotal;
 }
+const sampleArray1 = JSON.parse(sampleArray)
